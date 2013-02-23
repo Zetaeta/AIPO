@@ -1,0 +1,103 @@
+
+We know from Pythagoras' Theorem that the sum of the squares of the sides
+of a right triangle equals the square of the hypotenuse.
+
+                          a^2 + b^2 = c^2
+
+This relationships holds in cases where the sides of the triangle are whole
+numbers. 
+
+For example, if 3 to the power of 2 is written 3^2 = 9 then 
+             3^2 + 4^2 = 5^2   
+	     and
+	     5^2 + 12^2 = 13^2 
+	     and
+	     28^2 + 45^2 = 53^2
+
+A triple (a, b, c) of positive integers for which this is true is called a
+Pythagorean Triple.
+
+We can list the Pythagorean triples in ascending order of the value of c:
+(3,4,5)       first Pythagorean triples
+(4,3,5)
+
+(6,8,10)      second Pythagorean triples
+(8,6,10)
+
+(5,12,13)     third Pythagorean triples
+(12,5,13)
+
+(9,12,15)     fourth Pythagorean triples
+(12,9,15)
+
+(8,15,17)     fifth Pythagorean triples
+(15,8,17)
+
+(12,16,20)    sixth Pythagorean triples
+(16,12,20)
+
+(7,24,25)     seventh Pythagorean triples
+(15,20,25)
+(20,15,25)
+(24,7,25)
+...
+Note that if (a, b, c) is a Pythagorean triple, then (b, a, c) is also a P;ythagorean
+triple. So each value of c appears at least twice in this list. 
+
+In addition, for some values of c, for example 25, c can appear more than twice.
+(7,24,25)     
+(15,20,25)
+(20,15,25)
+(24,7,25)
+
+Write a program called q2 that will input an integer n, and output a list of the 
+first n values in ascending order that appear as c in a Pythagorean triple where c > 2. 
+You can assume n < 10000
+
+For example, if n = 7, the Pythagorean triples would be in ascending order:
+
+(3,4,5)
+(4,3,5)
+(6,8,10)
+(8,6,10)
+(5,12,13)
+(12,5,13)
+(9,12,15)
+(12,9,15)
+(8,15,17)
+(15,8,17)
+(12,16,20)
+(16,12,20)
+(7,24,25)
+(15,20,25)
+(20,15,25)
+(24,7,25)
+
+
+
+>cat q2_1.in
+7
+>cat q2_1.out
+25
+>java q2 < q2_1.in
+25
+
+--------------------------------------------------------------------------
+
+>cat q2_2.in
+100
+>cat q2_2.out
+25
+50
+65
+75
+85
+>java q2 < q2_2.in
+25
+50
+65
+75
+85
+
+--------------------------------------------------------------------------
+
